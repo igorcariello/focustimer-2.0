@@ -1,0 +1,96 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  font-size: clamp(40%, 1% + 2vw, 62.5%);
+
+  --tc-primary: hsl(240, 6%, 21%);
+  --bg-button: hsla(240, 9%, 89%, 1);
+  --tc-primary-hover: hsl(240, 6%, 15%);
+  --bg-button-hover:hsla(194, 97%, 31%, 1);
+  --tc-secundary-hover: hsla(0,0%,100%,1)
+}
+
+.app{
+  display: flex;
+  gap: 19.2rem;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.controls-timer{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.controls-timer span{
+  font-size: 12.6rem;
+  line-height: 14.4rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  color: var(--tc-primary);
+}
+
+.controls{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.controls button{
+  background: transparent;
+  border: none;
+  color: var(--tc-primary);
+  font-size: 4.8rem;
+
+  cursor: pointer;
+}
+
+.controls button:hover{
+  color: var(--tc-primary-hover);
+  transform: scale(1.02);
+  transition: ease 0.3s;
+}
+
+.controls-musics{
+  width: 33.6rem;
+
+  display: grid;
+  grid-template-areas: 
+  'tree cloud'
+  'shop fire';
+  row-gap: 3.2rem;
+  column-gap: 3.2rem;  
+}
+
+
+.controls-musics button{
+  border-radius: 2.4rem;
+  width: 13.8rem;
+  height: 15.2rem;
+  border: none;
+  font-size: 4.8rem;
+  color: var(--tc-primary);
+  background: var(--bg-button);
+
+  cursor: pointer;
+}
+
+.controls-musics button:hover{
+  background: var(--bg-button-hover);
+  color: var(--tc-secundary-hover);
+
+  transition: linear 0.4s;
+}
+
+.running .ph-play-circle,
+html:not(.running) .ph-pause-circle{
+  display: none;
+
+}
+

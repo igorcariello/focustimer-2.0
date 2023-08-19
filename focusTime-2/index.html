@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Focus-timer 2.0</title>
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-svg">
+  <script src="./js/main.js" type="module" defer></script>
+</head>
+<body>
+  <div class="app">
+    <section class="controls-timer">
+      <div class="timer">
+        <span id="minutes">00</span>
+        <span>:</span>
+        <span id="seconds">00</span>
+      </div>
+      <div class="controls">
+        <button 
+        data-action="toggleRunning"
+        class="ph-bold ph-play-circle">
+        
+        </button>
+
+        <button 
+        data-action="toggleRunning"
+        class="ph-bold ph-pause-circle">
+        
+        </button>
+        
+        <button
+        data-action="reset"
+        class="ph-bold ph-stop-circle">
+
+        </button>
+        
+        <button
+        data-action="plusMinutes" 
+        class="ph-bold ph-plus-circle">
+
+        </button>
+        
+        <button
+        data-action="minusMinutes"
+        class="ph-bold ph-minus-circle">
+
+        </button>
+      </div>
+    </section>
+    <section class="controls-musics">
+      <button
+      data-action="forestSound" 
+      class="ph ph-tree">
+        
+      </button>
+      
+      <button
+      data-action="rainSound"
+      class="ph ph-cloud-rain">
+
+      </button>
+      
+      <button
+      data-action="coffeShopSound"
+      class="ph ph-storefront">
+
+      </button>
+      
+      <button
+      data-action="fireplaceSound"
+      class="ph ph-flame" >
+
+      </button>
+
+    </section>
+  </div>
+</body>
+</html>
